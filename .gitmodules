@@ -1,0 +1,9 @@
+[submodule "Depends/gptoolbox"]
+	path = Depends/gptoolbox
+	url = https://github.com/alecjacobson/gptoolbox.git
+[submodule "Depends/libigl"]
+	path = Depends/libigl
+	url = https://github.com/libigl/libigl.git
+[submodule "Depends/fm2"]
+	path = Depends/fm2
+	url = https://github.com/jvgomez/fm2_matlab.git
