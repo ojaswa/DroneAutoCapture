@@ -17,7 +17,7 @@ Additionally, the following Matlab toolboxes need to be installed
 ## Code organization:
 The entire code is organized as multiple stages that are organized in folders prepended with the stage number. The stages are pipelined and the output of the previous stage feeds to the input of the next stage, except for the 5th stage of roof waypoint generation (which is an independent stage). For every stage the main Matlab script is named after the stage name. Following are various stages of the techniqe that need to be run in this order:
 1. **MeshCut**: Cut out a building of interest from a larger nadir mesh  
-*Input*: Georefernced boundaries for the building in DXF format (polygon), Nadir mesh in OBJ format.  
+*Input*: Georefernced boundaries for the building in DXF format (polygon), Nadir mesh in OBJ format  
 *Output*: A cut mesh of the required building in OBJ format
 2. **MeshSections**: Create cross-sections of the cut mesh at certain altitudes in order to create drone path  
 *Input*: Cut mesh  
@@ -27,7 +27,7 @@ The entire code is organized as multiple stages that are organized in folders pr
 *Output*: Obstacle aware path for the drone as polygon files (text)
 4. **Waypoints**: Optimize and generate waypoints along the obstacle aware path  
 *Input*: Obstacle aware paths, obstacle maps, building boundaries  
-*Output*:Drone waypoints for walls
+*Output*: Drone waypoints for walls
 5. **WaypointsRoof**: Generate waypoints for the building roof  
 *Input*: Roof polygon in DXF format  
 *Output*: Drone waypoints for roof
