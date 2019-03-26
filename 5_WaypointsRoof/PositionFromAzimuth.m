@@ -1,0 +1,10 @@
+function [lat, lon] = PositionFromAzimuth(lat1, lon1, az)
+R = 6371; % Km
+del = 0.001/R; % Use a distance of 1 m
+lat1 = lat1*pi/180;
+lon1 = lon1*pi/180;
+az = az*pi/180;
+lat = asin(sin(lat1).*cos(del) + cos(lat1).*sin(del).*cos(az));
+lon = (lon1 + atan2(sin(az).*sin(del).*cos(lat1), cos(del) - sin(lat1).*sin(lat)))*180/pi;
+lat = lat*180/pi;
+lon = mod(lon + 3*180, 2*180) - 180;
