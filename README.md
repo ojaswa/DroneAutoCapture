@@ -38,5 +38,5 @@ The entire code is organized as multiple stages that are organized in folders pr
 
 ---
 The code corrsponds to the following Computers & Graphics publication and is allowed to be used for academic and research purpose (non-commercial):  
-*[O. Sharma N. Arora, and H. Sagar, "Image acquisition for high quality architectural reconstruction." In Proceedings of Graphics Interface, 2019. (To appear)](http://graphicsinterface.org/conference/2019/)*  
+*[O. Sharma N. Arora, and H. Sagar, "Image acquisition for high quality architectural reconstruction." In Proceedings of Graphics Interface, 2019.](http://graphicsinterface.org/proceedings/gi2019/gi2019-18/)*  
 Please cite the paper in case you choose to use this code.
